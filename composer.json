@@ -1,0 +1,20 @@
+{
+    "name": "rasteixeira/phinx",
+    "description": "Teste do pacote phinx para criação de migrações seeders",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Teixeira",
+            "email": "rafaeldemeirateixeira@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "robmorgan/phinx": "dev-master",
+        "cakephp/chronos": "dev-master"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0@dev"
+    }
+}

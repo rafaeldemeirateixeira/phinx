@@ -1,8 +1,7 @@
 <?php
 
-use Phinx\Seed\AbstractSeed;
-use Cake\Auth\DefaultPasswordHasher;
 use Cake\Chronos\Chronos;
+use Phinx\Seed\AbstractSeed;
 
 class UserSeeder extends AbstractSeed
 {

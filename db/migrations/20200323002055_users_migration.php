@@ -31,7 +31,7 @@ class UsersMigration extends AbstractMigration
      */
     public function change()
     {
-        $this->table('users')
+        $users = $this->table('users')
             ->addColumn('name', 'string', ['limit' => 20])
             ->addColumn('email', 'string', ['limit' => 100])
             ->addColumn('email_verified_at', 'datetime', ['null' => true])
@@ -41,15 +41,5 @@ class UsersMigration extends AbstractMigration
             ->addColumn('updated_at', 'datetime', ['null' => true])
             ->addIndex(['email'], ['unique' => true])
             ->create();
-    }
-
-    /**
-     * Migrate down
-     *
-     * @return void
-     */
-    public function down()
-    {
-        $this->table('users')->drop()->save();
     }
 }

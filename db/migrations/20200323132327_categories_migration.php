@@ -34,7 +34,7 @@ class CategoriesMigration extends AbstractMigration
         $this->table('categories')
             ->addColumn('name', 'string', ['limit' => 100])
             ->addColumn('description', 'text', ['limit' => 'TEXT_REGULAR'])
-            ->addColumn('image', 'blob', ['limit' => 'BLOB_LONG'])
+            ->addColumn('image', 'blob', ['limit' => 'BLOB_LONG', 'null' => true])
             ->addColumn('created_at', 'datetime', ['null' => true])
             ->addColumn('updated_at', 'datetime', ['null' => true])
             ->create();
